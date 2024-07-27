@@ -1,13 +1,197 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body {
+  background-color: rgb(229, 228, 222);
+}
+
+.header-date-format {
+  background-color: rgb(38, 69, 79);
+  border: 1px solid black;
+  margin: 5px 3px 3px;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: center;
+  color: #ece9d0;
+}
+.composer-context {
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  align-items: center;
+}
+
+.add-modal-close {
+  border: none;
+  background-color: white;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  height: 60%;
+  width: 50%;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgb(158, 184, 178);
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.btn-modal {
+  border: none;
+  border-radius: 0.6rem;
+  height: 2.5rem;
+  width: 4.5rem;
+  background-color: rgb(36, 60, 74);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.event-list {
+  border-radius: 0.4rem;
+  height: 200px;
+  width: 70%;
+  padding: auto;
+}
+
+.event-entry {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  margin-top: 15px;
+  box-shadow: 7px 7px 3px rgb(170, 199, 209);
+  width: 87%;
+  justify-content: space-evenly;
+}
+.event-entry:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.remove-localStorage {
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: rgb(144, 21, 21);
+  border-radius: 0.3rem;
+  color: white;
+}
+.remove-localStorage:hover {
+  background-color: rgb(239, 11, 11);
+}
+
+.event-add {
+  background-color: white;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  border-radius: 0.4rem;
+  font-size: 25px;
+  cursor: pointer;
+}
+.event-add:hover {
+  background-color: aquamarine;
+  border: 3px solid black;
+  transform: scale(1.09);
+  transition: ease-in-out 0.3s;
+}
+
+.input-field {
+  border-radius: 0.5rem;
+  width: 60%;
+  border-color: rgb(186, 137, 231);
+  border-width: 0.3rem;
+  height: 2rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.edit-localStorage {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: rgb(30, 49, 42);
+}
+.edit-localStorage:hover {
+  background-color: rgb(70, 74, 73);
+}
+
+.textarea {
+  width: 80%;
+  height: 25%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.save {
+  background-color: rgb(39, 117, 39);
+}
+.save:hover {
+  background-color: rgb(52, 148, 52);
+  border: 2px solid white;
+}
+.cancel {
+  background-color: rgb(34, 33, 33);
+}
+.cancel:hover {
+  background-color: rgb(66, 65, 65);
+  border: 2px solid white;
+}
+.central {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  background-color: rgb(163, 234, 215);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 52px;
+  box-shadow: 7px 7px 3px rgb(170, 199, 209);
+  justify-content: space-evenly;
+  width: 87%;
+  height: 28%;
+}
+
+.desc:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
 }
